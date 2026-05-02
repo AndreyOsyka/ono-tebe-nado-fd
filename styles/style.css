@@ -1,13 +1,12 @@
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    height: 293px;
+    padding: 0px 0 91px;
 }
 
 .header__menu {
     display: inline;
     margin-top: 133px;
-    margin-left: 50px;
 }
 
 ul {
@@ -15,10 +14,6 @@ ul {
     list-style: circle;
     gap: 31.5px;
     font-size: 18px;
-}
-
-.header__links-list {
-    margin-left: -52px;
 }
 
 .header__links-list_item {
@@ -30,21 +25,28 @@ ul {
     margin-left: 50px;
 }
 
+.active-link_item-no-underline {
+    text-decoration: none;
+}
+
 .header__logo {
     width: 136px;
     margin-top: 93px;
 }
 
-.header__address {
-    font-family: "Raleway";
+.header__address_position {
+    margin-top: 96px;
+    margin-left: 192px;
+}
+
+.address {
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
     display: flex;
     flex-direction: column;
-    margin-top: 96px;
-    margin-left: 192px;
 }
 
 h1 {
@@ -70,14 +72,14 @@ h1 {
 }
 
 .aligned-text_left {
-    margin-top: 164px;
+    margin-top: 163px;
     padding-left: 50px;
 }
 
 .aligned-text_center {
     text-align: center;
-    margin-top: -2px;
     padding-left: 30px;
+    margin-top: -4px;
 }
 
 .aligned-text_right {
@@ -88,7 +90,7 @@ h1 {
 
 .cover_description {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 106px;
     margin-left: 50px;
     width: 1000px;
@@ -96,15 +98,12 @@ h1 {
 
 .cover_description-text {
     margin-top: 11px;
-    font-family: "Raleway";
     text-transform: uppercase;
     font-weight: 400;
     font-size: 22px;
-    line-height: 28px;
 }
 
 .cover_description-text_starting {
-    margin-left: -58px;
     word-spacing: 20px;
     align-self: center;
     color: white;
@@ -112,14 +111,14 @@ h1 {
 }
 
 .cover_description-text_letter-v {
-    margin-left: 23px;
+    margin-left: 17px;
     align-self: center;
     color: white;
     z-index: 1;
 }
 
 .cover_description-text_ending {
-    margin-left: 25px;
+    margin-left: 19px;
     word-spacing: 18px;
     align-self: center;
     color: white;
@@ -132,7 +131,6 @@ h1 {
     background: transparent;
     width: 256px;
     height: 51px;
-    margin-right: -56px;
     color: #fff;
     border: 1px solid #fff;
     z-index: 1;    
@@ -152,9 +150,8 @@ h1 {
     flex-direction: column;
 }
 
-h2 {
+h3 {
     text-transform: uppercase;
-    color: #000;
 }
 
 .lots-heading {
@@ -165,7 +162,8 @@ h2 {
 .lots_card-list {
     margin-top: 27px;
     display: flex;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .card {
@@ -173,13 +171,12 @@ h2 {
     flex-direction: column;
     width: 334px;
     position: relative;
-    margin-left: -2px;
     justify-content: space-between;
     align-content: space-evenly;
 }
 
 .card_title {
-    padding: 48px 40px 0;
+    padding: 12px 40px 35px;
     color: #fff;
     font-weight: 700;
     font-size: 22px;
@@ -192,7 +189,7 @@ h2 {
 
 .card_text {
     padding: 0 40px 48px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 20px;
     line-height: 120%;
@@ -200,7 +197,7 @@ h2 {
 }
 
 .card-type {
-    height: 596px;
+    padding-top: 36px;
     background-size: cover;
     background-position: center;
 }
@@ -238,7 +235,6 @@ h2 {
 
 .about {
     margin: 120px 24px 0;
-    height: 595px;
     display: grid;
     grid-template-columns: 334px 1fr;
 }
@@ -261,7 +257,6 @@ h2 {
 
 .about__column {
     width: 693px;
-    height: 449px;
 }
 
 .about__title {
@@ -273,7 +268,7 @@ h2 {
 }
 
 .about__text {
-    margin-bottom: 8px;
+    margin-bottom: 28px;
     margin-left: 25px;
     line-height: 24px;
     width: 690px;
@@ -281,18 +276,13 @@ h2 {
 }
 
 .footer {
-    margin-top: 180px;
+    margin-top: 151px;
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr;
-    height: 180px;
 }
 
-.footer__address {
+.footer__address_position {
     grid-column: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 25px;
 }
 
 .footer__menu {
@@ -304,7 +294,7 @@ h2 {
     justify-items: center;
     list-style-type: none;
     gap: 0;
-    margin-left: -49px;
+    padding-right: 49px;
     margin-top: 2px;
 }
 
